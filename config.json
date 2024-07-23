@@ -1,0 +1,27 @@
+{
+  "auditName": "sql-audit",
+  "job": {
+    "serverId": "",
+    "startMode": "latest",
+    "timestamp": ""
+  },
+  "source": {
+    "sourceType": "mysql",
+    "hostname": "192.168.1.204",
+    "port": 3306,
+    "username": "root",
+    "password": "root",
+    "databaseList": [],
+    "tableList": [],
+    "blackDatabaseList": []
+  },
+  "alarm": {
+    "alarmType": "WEBHOOK",
+    "webhook": "https://oapi.dingtalk.com/robot/send?access_token=171fd8b3c3148ebecd70d09448f73a3952081042ca2284741a1ec8cdf16698bd",
+    "msgtype": "text",
+    "at": {
+      "isAtAll": false,
+      "atMobiles": ["15223352430"]
+    }
+  }
+}
