@@ -7,7 +7,7 @@
   },
   "source": {
     "sourceType": "mysql",
-    "hostname": "192.168.1.204",
+    "hostname": "127.0.0.1",
     "port": 3306,
     "username": "root",
     "password": "root",
@@ -17,11 +17,11 @@
   },
   "alarm": {
     "alarmType": "WEBHOOK",
-    "webhook": "https://oapi.dingtalk.com/robot/send?access_token=171fd8b3c3148ebecd70d09448f73a3952081042ca2284741a1ec8cdf16698bd",
+    "webhook": "https://oapi.dingtalk.com/robot/send?access_token=${YOUR_TOKEN}",
     "msgtype": "text",
     "at": {
       "isAtAll": false,
-      "atMobiles": ["15223352430"]
+      "atMobiles": ["13200000000"]
     }
   }
 }
