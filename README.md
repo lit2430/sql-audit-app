@@ -66,7 +66,6 @@
 ```json
 {
   "auditName": "sql-audit",
-  任务名称
   "job": {
     "serverId": "",
     "startMode": "latest",
