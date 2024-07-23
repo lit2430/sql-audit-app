@@ -2,16 +2,16 @@
 
 #### 一、项目能力：
 
-基于FlinkCDC和Flink技术栈，采用Flink on yarn部署模式，实现增量监听Mysql数据库，对Mysql中的DDL语句做审计告警，将告警消息发送至钉钉告警群。
+基于FlinkCDC-3.1.1和Flink-1.18技术栈，采用Flink on yarn部署模式，实现增量监听Mysql数据库，对Mysql中的DDL语句做审计告警，将告警消息发送至钉钉告警群。
 
 #### 二、主要技术架构：
 
-| 技术栈           | 版本    |
-|---------------|-------|
-| java          | 1.8   |
-| FlinkCDC      | 3.1.1 |
-| Flink         | 1.18  |
-| Hadoop (yarn) | 2.8.  |
+| 技术栈           | 版本     |
+|---------------|--------|
+| java          | 1.8    |
+| FlinkCDC      | 3.1.1  |
+| Flink         | 1.18.0 |
+| Hadoop (yarn) | 2.8.3  |
 
 #### 三、部署流程：
 
@@ -66,7 +66,6 @@
 ```json
 {
   "auditName": "sql-audit",
-  #
   任务名称
   "job": {
     "serverId": "",
